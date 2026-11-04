@@ -3,9 +3,9 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Rekomendasi Tempat Kerja Buat Kamu</title>
+<title>Cari Cuan 🤭</title>
 <style>
-  /* PALET WARNA BARU:
+  /* PALET WARNA:
      Biru Tegas: #008ae6
      Biru Muda: #d4ebf2
      Hijau Toska: #188b8e
@@ -19,6 +19,9 @@
     background: #d4ebf2; /* Biru Muda */
     color: #1e293b;
     line-height: 1.6;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh; /* Biar footer selalu di bawah */
   }
 
   /* HEADLINE & SUBLINE */
@@ -48,6 +51,7 @@
     display: flex;
     flex-direction: column;
     gap: 20px;
+    flex: 1; /* Biar container ngisi sisa ruang kosong */
   }
 
   /* KARTU LIST */
@@ -55,7 +59,7 @@
     background: #ffffff;
     border-radius: 12px;
     padding: 20px 24px;
-    box-shadow: 0 4px 15px rgba(24, 139, 142, 0.08); /* Shadow toska tipis */
+    box-shadow: 0 4px 15px rgba(24, 139, 142, 0.08);
     border: 1px solid #b8dde6;
     display: flex;
     justify-content: space-between;
@@ -66,7 +70,7 @@
   .list-card:hover {
     transform: translateY(-3px);
     box-shadow: 0 8px 25px rgba(0, 138, 230, 0.15);
-    border-color: #008ae6; /* Border jadi biru tegas saat di-hover */
+    border-color: #008ae6;
   }
 
   /* BAGIAN KIRI (Teks) */
@@ -79,7 +83,7 @@
   .card-left h3 {
     font-size: 1.25rem;
     font-weight: 700;
-    color: #008ae6; /* Nama PT pakai Biru Tegas */
+    color: #008ae6;
     margin-bottom: 4px;
   }
   .card-left .role {
@@ -92,7 +96,7 @@
   .btn-link {
     display: inline-block;
     text-decoration: none;
-    color: #008ae6; /* Teks tombol Biru Tegas */
+    color: #008ae6;
     font-weight: 600;
     font-size: 0.85rem;
     padding: 8px 16px;
@@ -101,7 +105,7 @@
     transition: all 0.3s ease;
   }
   .btn-link:hover {
-    background: #dca662; /* Berubah jadi Emas saat di-hover */
+    background: #dca662;
     border-color: #dca662;
     color: #ffffff;
   }
@@ -123,6 +127,16 @@
     width: 100%;
     height: 100%;
     object-fit: cover;
+  }
+
+  /* FOOTER / COPYRIGHT */
+  footer {
+    text-align: center;
+    padding: 30px 20px;
+    background: transparent;
+    color: #475569;
+    font-size: 0.9rem;
+    font-weight: 500;
   }
 
   /* RESPONSIVE (Buat HP) */
@@ -148,8 +162,8 @@
 
   <!-- HEADLINE & SUBLINE -->
   <header class="header-section">
-    <h1>Rekomendasi Tempat Kerja</h1>
-    <p>Kurasi tempat kerja impian berdasarkan lingkungan dan budaya yang suportif.</p>
+    <h1>Cari Cuan 🤭</h1>
+    <p>sudah tak seleksi dan terlihat meyakinkan</p>
   </header>
 
   <div class="container">
@@ -191,6 +205,11 @@
     </div>
 
   </div>
+
+  <!-- FOOTER -->
+  <footer>
+    <p>Dibuat penuh cinta dan waktu luang. Good luck interview-nya, ya! 🌸</p>
+  </footer>
 
 </body>
 </html>
