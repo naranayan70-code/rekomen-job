@@ -5,18 +5,18 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Rekomendasi Tempat Kerja Buat Kamu</title>
 <style>
-  /* PALET WARNA:
-     Biru Muda: #eef4fa
-     Biru Keabuan: #a4bdd4
-     Hijau Tua: #0d684b
-     Emas: #e2b75d
+  /* PALET WARNA BARU:
+     Biru Tegas: #008ae6
+     Biru Muda: #d4ebf2
+     Hijau Toska: #188b8e
+     Emas: #dca662
   */
 
   * { margin: 0; padding: 0; box-sizing: border-box; }
 
   body {
     font-family: 'Segoe UI', system-ui, -apple-system, sans-serif;
-    background: #eef4fa; /* Biru sangat muda */
+    background: #d4ebf2; /* Biru Muda */
     color: #1e293b;
     line-height: 1.6;
   }
@@ -25,9 +25,9 @@
   .header-section {
     text-align: center;
     padding: 60px 20px 40px;
-    background: #0d684b; /* Hijau Tua */
+    background: #188b8e; /* Hijau Toska */
     color: #ffffff;
-    border-bottom: 4px solid #e2b75d; /* Garis aksen Emas di bawah header */
+    border-bottom: 4px solid #dca662; /* Garis aksen Emas */
   }
   .header-section h1 {
     font-size: 2.2rem;
@@ -37,7 +37,7 @@
   }
   .header-section p {
     font-size: 1.05rem;
-    color: #a4bdd4; /* Biru keabuan untuk subline */
+    color: #e2f1f5; /* Biru sangat muda untuk teks subline */
   }
 
   /* CONTAINER LIST */
@@ -55,8 +55,8 @@
     background: #ffffff;
     border-radius: 12px;
     padding: 20px 24px;
-    box-shadow: 0 4px 15px rgba(13, 104, 75, 0.05);
-    border: 1px solid #a4bdd4; /* Border biru keabuan */
+    box-shadow: 0 4px 15px rgba(24, 139, 142, 0.08); /* Shadow toska tipis */
+    border: 1px solid #b8dde6;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -65,8 +65,8 @@
   }
   .list-card:hover {
     transform: translateY(-3px);
-    box-shadow: 0 8px 25px rgba(13, 104, 75, 0.15);
-    border-color: #0d684b;
+    box-shadow: 0 8px 25px rgba(0, 138, 230, 0.15);
+    border-color: #008ae6; /* Border jadi biru tegas saat di-hover */
   }
 
   /* BAGIAN KIRI (Teks) */
@@ -79,12 +79,12 @@
   .card-left h3 {
     font-size: 1.25rem;
     font-weight: 700;
-    color: #0d684b; /* Nama PT pakai Hijau Tua */
+    color: #008ae6; /* Nama PT pakai Biru Tegas */
     margin-bottom: 4px;
   }
   .card-left .role {
     font-size: 0.95rem;
-    color: #64748b;
+    color: #475569;
     margin-bottom: 16px;
   }
   
@@ -92,17 +92,17 @@
   .btn-link {
     display: inline-block;
     text-decoration: none;
-    color: #0d684b; /* Teks tombol Hijau Tua */
+    color: #008ae6; /* Teks tombol Biru Tegas */
     font-weight: 600;
     font-size: 0.85rem;
     padding: 8px 16px;
-    border: 2px solid #0d684b;
+    border: 2px solid #008ae6;
     border-radius: 6px;
     transition: all 0.3s ease;
   }
   .btn-link:hover {
-    background: #e2b75d; /* Berubah jadi Emas saat di-hover */
-    border-color: #e2b75d;
+    background: #dca662; /* Berubah jadi Emas saat di-hover */
+    border-color: #dca662;
     color: #ffffff;
   }
 
@@ -112,8 +112,8 @@
     height: 120px;
     flex-shrink: 0;
     border-radius: 8px;
-    background: #eef4fa;
-    border: 1px solid #a4bdd4;
+    background: #d4ebf2;
+    border: 1px solid #b8dde6;
     display: flex;
     align-items: center;
     justify-content: center;
