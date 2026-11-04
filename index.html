@@ -14,240 +14,182 @@
     line-height: 1.6;
   }
 
-  /* HERO */
-  .hero {
-    background: linear-gradient(135deg, #1e3a8a 0%, #2563eb 100%);
-    color: #fff;
-    padding: 70px 20px 80px;
+  /* HEADLINE & SUBLINE */
+  .header-section {
     text-align: center;
+    padding: 60px 20px 40px;
+    background: #fff;
+    border-bottom: 1px solid #e2e8f0;
   }
-  .hero h1 {
+  .header-section h1 {
     font-size: 2.2rem;
     font-weight: 700;
-    margin-bottom: 14px;
-    letter-spacing: -0.5px;
-  }
-  .hero p {
-    font-size: 1.05rem;
-    opacity: 0.9;
-    max-width: 560px;
-    margin: 0 auto;
-  }
-  .hero .badge {
-    display: inline-block;
-    background: rgba(255,255,255,0.15);
-    border: 1px solid rgba(255,255,255,0.3);
-    padding: 6px 16px;
-    border-radius: 999px;
-    font-size: 0.8rem;
-    margin-bottom: 20px;
-    letter-spacing: 0.5px;
-  }
-
-  /* CONTAINER */
-  .container {
-    max-width: 960px;
-    margin: -40px auto 0;
-    padding: 0 20px 60px;
-  }
-
-  /* SECTION TITLE */
-  .section-title {
-    font-size: 1.3rem;
-    font-weight: 700;
-    margin: 40px 0 18px;
     color: #1e3a8a;
-    display: flex;
-    align-items: center;
-    gap: 10px;
+    margin-bottom: 8px;
   }
-  .section-title::before {
-    content: "";
-    width: 6px;
-    height: 24px;
-    background: #2563eb;
-    border-radius: 4px;
+  .header-section p {
+    font-size: 1.05rem;
+    color: #64748b;
   }
 
-  /* CARD GRID */
-  .grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
-    gap: 18px;
-  }
-
-  .card {
-    background: #fff;
-    border-radius: 14px;
-    padding: 24px;
-    box-shadow: 0 2px 12px rgba(30, 58, 138, 0.08);
-    border: 1px solid #e2e8f0;
-    transition: transform 0.2s ease, box-shadow 0.2s ease;
+  /* CONTAINER LIST */
+  .container {
+    max-width: 800px;
+    margin: 40px auto;
+    padding: 0 20px;
     display: flex;
     flex-direction: column;
-  }
-  .card:hover {
-    transform: translateY(-4px);
-    box-shadow: 0 8px 24px rgba(30, 58, 138, 0.15);
+    gap: 20px;
   }
 
-  .card .logo {
-    width: 48px;
-    height: 48px;
-    border-radius: 10px;
-    background: linear-gradient(135deg, #2563eb, #1e3a8a);
-    color: #fff;
+  /* KARTU LIST */
+  .list-card {
+    background: #fff;
+    border-radius: 12px;
+    padding: 20px 24px;
+    box-shadow: 0 2px 10px rgba(30, 58, 138, 0.05);
+    border: 1px solid #e2e8f0;
     display: flex;
+    justify-content: space-between;
     align-items: center;
-    justify-content: center;
+    gap: 24px;
+    transition: transform 0.2s ease;
+  }
+  .list-card:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 20px rgba(30, 58, 138, 0.1);
+  }
+
+  /* BAGIAN KIRI (Teks) */
+  .card-left {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .card-left h3 {
+    font-size: 1.25rem;
     font-weight: 700;
-    font-size: 1.2rem;
-    margin-bottom: 14px;
+    color: #0f172a;
+    margin-bottom: 4px;
   }
-
-  .card h3 {
-    font-size: 1.1rem;
-    font-weight: 700;
-    margin-bottom: 6px;
-  }
-
-  .card .tag {
-    display: inline-block;
-    background: #eff6ff;
-    color: #2563eb;
-    font-size: 0.75rem;
-    font-weight: 600;
-    padding: 3px 10px;
-    border-radius: 999px;
-    margin-bottom: 10px;
-  }
-
-  .card p {
-    font-size: 0.9rem;
-    color: #475569;
-    flex-grow: 1;
+  .card-left .role {
+    font-size: 0.95rem;
+    color: #64748b;
     margin-bottom: 16px;
   }
-
-  .card a {
-    display: inline-flex;
-    align-items: center;
-    gap: 6px;
+  
+  /* TOMBOL LINK */
+  .btn-link {
+    display: inline-block;
     text-decoration: none;
     color: #2563eb;
     font-weight: 600;
-    font-size: 0.9rem;
-    transition: gap 0.2s ease;
-  }
-  .card a:hover { gap: 10px; }
-
-  /* FOOTER */
-  footer {
-    text-align: center;
-    padding: 30px 20px;
     font-size: 0.85rem;
-    color: #94a3b8;
-    border-top: 1px solid #e2e8f0;
-    background: #fff;
+    padding: 8px 16px;
+    border: 1.5px solid #2563eb;
+    border-radius: 6px;
+    transition: all 0.2s ease;
+  }
+  .btn-link:hover {
+    background: #2563eb;
+    color: #fff;
   }
 
+  /* BAGIAN KANAN (Foto) */
+  .card-right {
+    width: 120px;
+    height: 120px;
+    flex-shrink: 0;
+    border-radius: 8px;
+    background: #f1f5f9;
+    border: 1px solid #e2e8f0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+  }
+  .card-right img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    /* object-fit: contain; -> pakai ini kalau gambarnya logo dan gak mau kepotong */
+  }
+  .card-right .placeholder-text {
+    font-size: 0.8rem;
+    color: #94a3b8;
+    text-align: center;
+    padding: 10px;
+    font-weight: 600;
+  }
+
+  /* RESPONSIVE (Buat HP) */
   @media (max-width: 600px) {
-    .hero h1 { font-size: 1.6rem; }
-    .hero { padding: 50px 20px 60px; }
-    .container { margin-top: -30px; }
+    .header-section h1 { font-size: 1.8rem; }
+    .list-card {
+      flex-direction: column-reverse; /* Di HP, foto pindah ke atas teks */
+      align-items: flex-start;
+      gap: 16px;
+    }
+    .card-right {
+      width: 100%;
+      height: 160px;
+    }
+    .btn-link {
+      width: 100%;
+      text-align: center;
+    }
   }
 </style>
 </head>
 <body>
 
-  <!-- HERO -->
-  <section class="hero">
-    <span class="badge">✨ Kurasi Pilihan</span>
-    <h1>Rekomendasi Tempat Kerja Buat Kamu</h1>
-    <p>Daftar tempat kerja yang layak dilirik — berdasarkan budaya kerja, lingkungan, dan hal-hal baik lainnya. Semoga cocok!</p>
-  </section>
+  <!-- HEADLINE & SUBLINE -->
+  <header class="header-section">
+    <h1>Rekomendasi Tempat Kerja</h1>
+    <p>Kurasi tempat kerja impian berdasarkan lingkungan dan budaya yang suportif.</p>
+  </header>
 
   <div class="container">
 
-    <!-- KATEGORI 1 -->
-    <h2 class="section-title">Teknologi & Digital</h2>
-    <div class="grid">
-
-      <div class="card">
-        <div class="logo">A</div>
+    <!-- CARD 1 -->
+    <div class="list-card">
+      <div class="card-left">
         <h3>PT Contoh Teknologi</h3>
-        <span class="tag">Teknologi</span>
-        <p>Budaya kerja suportif, tim muda, dan fleksibel soal remote. Cocok buat yang suka belajar cepat.</p>
-        <a href="https://contoh.com/karier" target="_blank">Lihat karier →</a>
+        <div class="role">Bidang: Software Engineer</div>
+        <a href="https://contoh.com/karier" class="btn-link" target="_blank">Link Rekrutmen →</a>
       </div>
+      <div class="card-right">
+        <!-- Ganti src dengan link gambar asli -->
+        <img src="https://images.unsplash.com/photo-1497366216548-37526070297c?ixlib=rb-4.0.3&auto=format&fit=crop&w=300&q=80" alt="Foto PT Contoh Teknologi">
+      </div>
+    </div>
 
-      <div class="card">
-        <div class="logo">B</div>
+    <!-- CARD 2 -->
+    <div class="list-card">
+      <div class="card-left">
         <h3>Startup Contoh Digital</h3>
-        <span class="tag">Startup</span>
-        <p>Lingkungan dinamis, banyak mentoring, dan kesempatan naik level cukup cepat.</p>
-        <a href="https://contoh.com/karier" target="_blank">Lihat karier →</a>
+        <div class="role">Bidang: UI/UX Designer</div>
+        <a href="https://contoh.com/karier" class="btn-link" target="_blank">Link Rekrutmen →</a>
       </div>
-
-      <div class="card">
-        <div class="logo">C</div>
-        <h3>PT Contoh Data</h3>
-        <span class="tag">Data & AI</span>
-        <p>Fokus pengembangan skill, ada budget belajar, dan work-life balance yang oke.</p>
-        <a href="https://contoh.com/karier" target="_blank">Lihat karier →</a>
+      <div class="card-right">
+        <img src="https://images.unsplash.com/photo-1522071820081-009f0129c71c?ixlib=rb-4.0.3&auto=format&fit=crop&w=300&q=80" alt="Foto Startup Contoh">
       </div>
-
     </div>
 
-    <!-- KATEGORI 2 -->
-    <h2 class="section-title">Perbankan & Finansial</h2>
-    <div class="grid">
-
-      <div class="card">
-        <div class="logo">D</div>
+    <!-- CARD 3 -->
+    <div class="list-card">
+      <div class="card-left">
         <h3>Bank Contoh Indonesia</h3>
-        <span class="tag">Perbankan</span>
-        <p>Tunjangan lengkap, jenjang karier jelas, dan program pelatihan rutin buat karyawan baru.</p>
-        <a href="https://contoh.com/karier" target="_blank">Lihat karier →</a>
+        <div class="role">Bidang: Data Analyst</div>
+        <a href="https://contoh.com/karier" class="btn-link" target="_blank">Link Rekrutmen →</a>
       </div>
-
-      <div class="card">
-        <div class="logo">E</div>
-        <h3>PT Contoh Fintech</h3>
-        <span class="tag">Fintech</span>
-        <p>Suasana kerja santai tapi profesional, benefit kompetitif, dan timnya kolaboratif.</p>
-        <a href="https://contoh.com/karier" target="_blank">Lihat karier →</a>
+      <div class="card-right">
+        <img src="https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?ixlib=rb-4.0.3&auto=format&fit=crop&w=300&q=80" alt="Foto Bank Contoh">
       </div>
-
-    </div>
-
-    <!-- KATEGORI 3 -->
-    <h2 class="section-title">Kreatif & Media</h2>
-    <div class="grid">
-
-      <div class="card">
-        <div class="logo">F</div>
-        <h3>Studio Contoh Kreatif</h3>
-        <span class="tag">Desain</span>
-        <p>Kebebasan berekspresi, proyek seru, dan tim yang suportif antar satu sama lain.</p>
-        <a href="https://contoh.com/karier" target="_blank">Lihat karier →</a>
-      </div>
-
-      <div class="card">
-        <div class="logo">G</div>
-        <h3>Agensi Contoh Media</h3>
-        <span class="tag">Media</span>
-        <p>Portofolio cepat berkembang, lingkungan kolaboratif, dan jam kerja cukup wajar.</p>
-        <a href="https://contoh.com/karier" target="_blank">Lihat karier →</a>
-      </div>
-
     </div>
 
   </div>
-
-  <footer>
-    Dibuat dengan ❤️ buat teman — silakan share link ini ke yang butuh.
-  </footer>
 
 </body>
 </html>
