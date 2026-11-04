@@ -21,7 +21,7 @@
     line-height: 1.6;
     display: flex;
     flex-direction: column;
-    min-height: 100vh; /* Biar footer selalu di bawah */
+    min-height: 100vh;
   }
 
   /* HEADLINE & SUBLINE */
@@ -30,17 +30,36 @@
     padding: 60px 20px 40px;
     background: #188b8e; /* Hijau Toska */
     color: #ffffff;
-    border-bottom: 4px solid #dca662; /* Garis aksen Emas */
+    border-bottom: 4px solid #dca662;
   }
   .header-section h1 {
-    font-size: 2.2rem;
-    font-weight: 700;
+    font-size: 2.4rem;
+    font-weight: 800;
     margin-bottom: 8px;
     letter-spacing: -0.5px;
   }
   .header-section p {
     font-size: 1.05rem;
-    color: #e2f1f5; /* Biru sangat muda untuk teks subline */
+    color: #e2f1f5;
+    margin-bottom: 24px;
+  }
+
+  /* TOMBOL WA DI HEADER */
+  .btn-wa-header {
+    display: inline-block;
+    background-color: #dca662; /* Emas */
+    color: #ffffff;
+    padding: 12px 24px;
+    text-decoration: none;
+    border-radius: 8px;
+    font-weight: 700;
+    font-size: 1rem;
+    box-shadow: 0 4px 10px rgba(220, 166, 98, 0.3);
+    transition: all 0.3s ease;
+  }
+  .btn-wa-header:hover {
+    background-color: #c9924a;
+    transform: translateY(-2px);
   }
 
   /* CONTAINER LIST */
@@ -51,7 +70,7 @@
     display: flex;
     flex-direction: column;
     gap: 20px;
-    flex: 1; /* Biar container ngisi sisa ruang kosong */
+    flex: 1;
   }
 
   /* KARTU LIST */
@@ -92,7 +111,7 @@
     margin-bottom: 16px;
   }
   
-  /* TOMBOL LINK */
+  /* TOMBOL LINK REKRUTMEN */
   .btn-link {
     display: inline-block;
     text-decoration: none;
@@ -139,6 +158,31 @@
     font-weight: 500;
   }
 
+  /* TOMBOL WA FLOATING (MELAYANG) */
+  .wa-float {
+    position: fixed;
+    width: 60px;
+    height: 60px;
+    bottom: 30px;
+    right: 30px;
+    background-color: #25d366; /* Warna khas WhatsApp */
+    color: #FFF;
+    border-radius: 50px;
+    text-align: center;
+    font-size: 30px;
+    box-shadow: 2px 4px 12px rgba(0,0,0,0.2);
+    z-index: 100;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    transition: transform 0.3s ease;
+  }
+  .wa-float:hover {
+    transform: scale(1.1) translateY(-3px);
+    color: #FFF;
+  }
+
   /* RESPONSIVE (Buat HP) */
   @media (max-width: 600px) {
     .header-section h1 { font-size: 1.8rem; }
@@ -155,6 +199,13 @@
       width: 100%;
       text-align: center;
     }
+    .wa-float {
+      width: 50px;
+      height: 50px;
+      font-size: 25px;
+      bottom: 20px;
+      right: 20px;
+    }
   }
 </style>
 </head>
@@ -164,6 +215,12 @@
   <header class="header-section">
     <h1>Cari Cuan 🤭</h1>
     <p>sudah tak seleksi dan terlihat meyakinkan</p>
+    
+    <!-- TOMBOL WA DI HEADER -->
+    <!-- GANTI 6281234567890 DENGAN NOMOR KAMU -->
+    <a href="https://wa.me/6281234567890?text=Halo,%20gue%20mau%20kasih%20info%20rekomendasi%20loker%20nih..." class="btn-wa-header" target="_blank">
+      💬 Punya Info Loker? Chat Gue!
+    </a>
   </header>
 
   <div class="container">
@@ -208,8 +265,14 @@
 
   <!-- FOOTER -->
   <footer>
-    <p>Dibuat penuh kasih dan waktu luang. Good luck interview-nya, ya! 🌸</p>
+    <p>Dibuat penuh cinta dan waktu luang. Good luck interview-nya, ya! 🌸</p>
   </footer>
+
+  <!-- TOMBOL WA FLOATING (MELAYANG) -->
+  <!-- GANTI 6281234567890 DENGAN NOMOR KAMU -->
+  <a href="https://wa.me/6281234567890?text=Halo,%20gue%20mau%20kasih%20info%20rekomendasi%20loker%20nih..." class="wa-float" target="_blank" title="Kirim Info Loker">
+    💬
+  </a>
 
 </body>
 </html>
