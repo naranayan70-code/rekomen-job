@@ -58,7 +58,7 @@
 
   /* CONTAINER LIST (Default untuk HP: 1 Kolom) */
   .container {
-    max-width: 1200px; /* Diperlebar biar muat 3 kolom di desktop */
+    max-width: 1100px; /* Diperlebar biar 3 kolom muat dengan pas */
     margin: 40px auto;
     padding: 0 20px;
     display: grid;
@@ -71,7 +71,7 @@
   .list-card {
     background: #ffffff;
     border-radius: 12px;
-    padding: 20px 24px;
+    padding: 16px 20px;
     box-shadow: 0 4px 15px rgba(24, 139, 142, 0.08);
     border: 1px solid #b8dde6;
     display: flex;
@@ -94,14 +94,14 @@
     align-items: flex-start;
   }
   .card-left h3 {
-    font-size: 1.15rem; /* Sedikit dikecilin biar muat 3 kolom */
+    font-size: 1.15rem;
     font-weight: 700;
     color: #008ae6;
     margin-bottom: 4px;
     line-height: 1.3;
   }
   .card-left .role {
-    font-size: 0.9rem;
+    font-size: 0.85rem;
     color: #475569;
     margin-bottom: 4px;
   }
@@ -144,8 +144,8 @@
 
   /* BAGIAN KANAN (Foto) */
   .card-right {
-    width: 90px;
-    height: 90px;
+    width: 80px; /* Dikecilin sedikit biar proporsional di 3 kolom */
+    height: 80px;
     flex-shrink: 0;
     border-radius: 8px;
     background: #d4ebf2;
@@ -159,7 +159,7 @@
     width: 100%;
     height: 100%;
     object-fit: contain;
-    padding: 6px; 
+    padding: 4px; 
     background: #ffffff;
   }
 
@@ -207,22 +207,11 @@
       grid-template-columns: repeat(3, 1fr); 
     }
     
+    /* Posisi kartu TETAP sama (Teks kiri, Foto kanan), 
+       cuma paddingnya disesuaikan sedikit */
     .list-card {
-      flex-direction: column-reverse; /* Di desktop, foto pindah ke atas teks */
-      align-items: flex-start;
+      padding: 16px;
       gap: 12px;
-    }
-
-    .card-right {
-      width: 100%; /* Foto jadi lebar penuh di dalam kartu */
-      height: 140px; /* Tinggi foto ditambah biar proporsional */
-      margin-bottom: 8px;
-    }
-
-    .btn-link, .btn-disabled {
-      width: 100%;
-      text-align: center;
-      margin-top: auto; /* Biar tombol selalu nempel di bawah */
     }
   }
 
