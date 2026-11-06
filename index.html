@@ -58,11 +58,11 @@
 
   /* CONTAINER LIST (Default untuk HP: 1 Kolom) */
   .container {
-    max-width: 1100px; /* Diperlebar biar 3 kolom muat dengan pas */
+    max-width: 1100px; 
     margin: 40px auto;
     padding: 0 20px;
     display: grid;
-    grid-template-columns: 1fr; /* 1 Kolom di HP */
+    grid-template-columns: 1fr; 
     gap: 20px;
     flex: 1;
   }
@@ -71,7 +71,7 @@
   .list-card {
     background: #ffffff;
     border-radius: 12px;
-    padding: 16px 20px;
+    padding: 20px; /* Padding standar */
     box-shadow: 0 4px 15px rgba(24, 139, 142, 0.08);
     border: 1px solid #b8dde6;
     display: flex;
@@ -142,25 +142,25 @@
     cursor: not-allowed;
   }
 
-  /* BAGIAN KANAN (Foto) */
+  /* BAGIAN KANAN (Foto) - Default untuk HP */
   .card-right {
-    width: 80px; /* Dikecilin sedikit biar proporsional di 3 kolom */
-    height: 80px;
+    width: 85px; 
+    height: 85px;
     flex-shrink: 0;
-    border-radius: 8px;
-    background: #d4ebf2;
-    border: 1px solid #b8dde6;
+    border-radius: 10px;
+    background: #ffffff; /* Background putih bersih */
+    border: 2px solid #e2e8f0; /* Border abu tebal tipis */
     display: flex;
     align-items: center;
     justify-content: center;
     overflow: hidden;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.05); /* Bayangan tipis */
   }
   .card-right img {
     width: 100%;
     height: 100%;
     object-fit: contain;
-    padding: 4px; 
-    background: #ffffff;
+    padding: 6px; 
   }
 
   /* FOOTER / COPYRIGHT */
@@ -203,15 +203,23 @@
   /* ========================================= */
   @media (min-width: 768px) {
     .container {
-      /* Ini kuncinya: bikin 3 kolom yang ukurannya sama rata */
-      grid-template-columns: repeat(3, 1fr); 
+      grid-template-columns: repeat(3, 1fr); /* 3 kolom */
     }
     
-    /* Posisi kartu TETAP sama (Teks kiri, Foto kanan), 
-       cuma paddingnya disesuaikan sedikit */
     .list-card {
-      padding: 16px;
-      gap: 12px;
+      padding: 24px 20px; /* Padding dilebarkan biar lega */
+      gap: 16px;
+    }
+
+    /* INI KUNCI PERBAIKANNYA: Logo Dibesarkan biar Menonjol */
+    .card-right {
+      width: 100px;  /* Dari 65px jadi 100px biar gagah */
+      height: 100px;
+      border: 2px solid #b8dde6;
+    }
+
+    .card-left h3 {
+      font-size: 1.1rem; 
     }
   }
 
