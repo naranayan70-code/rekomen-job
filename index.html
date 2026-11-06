@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Cari Cuan 🤭</title>
+<title>CARICUN</title>
 <style>
   /* PALET WARNA */
   * { margin: 0; padding: 0; box-sizing: border-box; }
@@ -26,16 +26,21 @@
     color: #ffffff;
     border-bottom: 4px solid #dca662;
   }
+  
   .header-section h1 {
-    font-size: 2.4rem;
-    font-weight: 800;
-    margin-bottom: 8px;
-    letter-spacing: -0.5px;
+    font-size: 4.5rem; /* Dibikin raksasa */
+    font-weight: 900; /* Paling tebal */
+    margin-bottom: 0px; /* Rapat ke bawah */
+    letter-spacing: -1.5px; /* Huruf agak dirapetin */
+    line-height: 1;
   }
+  
   .header-section p {
-    font-size: 1.05rem;
-    color: #e2f1f5;
+    font-size: 1.3rem;
+    color: #ffffff;
     margin-bottom: 24px;
+    font-weight: 600;
+    letter-spacing: 0.5px;
   }
 
   /* TOMBOL WA DI HEADER */
@@ -56,9 +61,9 @@
     transform: translateY(-2px);
   }
 
-  /* CONTAINER LIST (Default untuk HP: 1 Kolom) */
+  /* CONTAINER LIST */
   .container {
-    max-width: 1200px; /* Diperlebar biar kartu bisa lebih lega */
+    max-width: 1200px; 
     margin: 40px auto;
     padding: 0 20px;
     display: grid;
@@ -71,12 +76,12 @@
   .list-card {
     background: #ffffff;
     border-radius: 12px;
-    padding: 24px; /* Padding lega seperti gambar */
+    padding: 24px; 
     box-shadow: 0 4px 15px rgba(24, 139, 142, 0.08);
     border: 1px solid #b8dde6;
     display: flex;
     justify-content: space-between;
-    align-items: stretch; /* Biar tinggi teks dan foto sejajar */
+    align-items: stretch; 
     gap: 20px;
     transition: transform 0.2s ease, box-shadow 0.2s ease;
   }
@@ -92,7 +97,7 @@
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    justify-content: space-between; /* Biar tombol nempel bawah */
+    justify-content: space-between; 
   }
   .card-left .text-content {
     margin-bottom: 16px;
@@ -146,7 +151,7 @@
     cursor: not-allowed;
   }
 
-  /* BAGIAN KANAN (Foto) - Default untuk HP */
+  /* BAGIAN KANAN (Foto) */
   .card-right {
     width: 90px; 
     height: 90px;
@@ -166,7 +171,7 @@
     padding: 8px; 
   }
 
-  /* FOOTER / COPYRIGHT */
+  /* FOOTER */
   footer {
     text-align: center;
     padding: 30px 20px;
@@ -176,7 +181,7 @@
     font-weight: 500;
   }
 
-  /* TOMBOL WA FLOATING (MELAYANG) */
+  /* TOMBOL WA FLOATING */
   .wa-float {
     position: fixed;
     width: 60px;
@@ -201,22 +206,16 @@
     color: #FFF;
   }
 
-  /* ========================================= */
-  /* RESPONSIVE DESKTOP & TABLET (MULAI DARI 768px) */
-  /* ========================================= */
+  /* RESPONSIVE DESKTOP */
   @media (min-width: 768px) {
     .container {
-      grid-template-columns: repeat(3, 1fr); /* 3 kolom */
+      grid-template-columns: repeat(3, 1fr); 
     }
-    
-    /* INI KUNCI PERBAIKANNYA: Proporsi Kotak Logo */
     .card-right {
-      width: 100px;  /* Lebar agak kecil */
-      height: 120px; /* Tinggi ditarik ke bawah biar persegi panjang vertikal */
+      width: 100px;  
+      height: 120px; 
       border-radius: 10px;
     }
-    
-    /* Teks di desktop disesuaikan sedikit */
     .card-left h3 {
       font-size: 1.05rem;
     }
@@ -224,7 +223,8 @@
 
   /* KHUSUS HP */
   @media (max-width: 767px) {
-    .header-section h1 { font-size: 1.8rem; }
+    .header-section h1 { font-size: 3.5rem; } /* Dikecilin dikit di HP */
+    .header-section p { font-size: 1.1rem; }
     .wa-float {
       width: 50px;
       height: 50px;
@@ -239,8 +239,8 @@
 
   <!-- HEADLINE & SUBLINE -->
   <header class="header-section">
-    <h1>Cari Cuan 🤭</h1>
-    <p>sudah tak seleksi dan terlihat meyakinkan</p>
+    <h1>CARCUN</h1>
+    <p>cari cari cuan 🤭</p>
     
     <a href="https://wa.me/6282128463176?text=Halo,%20gue%20mau%20kasih%20info%20rekomendasi%20loker%20nih..." class="btn-wa-header" target="_blank">
       💬 Request Posisi Job!
