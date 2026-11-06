@@ -28,10 +28,10 @@
   }
   
   .header-section h1 {
-    font-size: 4.5rem; /* Dibikin raksasa */
-    font-weight: 900; /* Paling tebal */
-    margin-bottom: 0px; /* Rapat ke bawah */
-    letter-spacing: -1.5px; /* Huruf agak dirapetin */
+    font-size: 4.5rem; 
+    font-weight: 900; 
+    margin-bottom: 0px; 
+    letter-spacing: -1.5px; 
     line-height: 1;
   }
   
@@ -81,7 +81,7 @@
     border: 1px solid #b8dde6;
     display: flex;
     justify-content: space-between;
-    align-items: stretch; 
+    align-items: flex-start; /* Semua elemen rata atas */
     gap: 20px;
     transition: transform 0.2s ease, box-shadow 0.2s ease;
   }
@@ -97,10 +97,9 @@
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    justify-content: space-between; 
   }
   .card-left .text-content {
-    margin-bottom: 16px;
+    margin-bottom: 24px; /* Jarak ke tombol */
   }
   .card-left h3 {
     font-size: 1.15rem;
@@ -138,23 +137,11 @@
     border-color: #dca662;
     color: #ffffff;
   }
-  
-  /* TOMBOL DISABLED */
-  .btn-disabled {
-    display: inline-block;
-    color: #94a3b8;
-    font-weight: 600;
-    font-size: 0.85rem;
-    padding: 8px 16px;
-    border: 2px solid #cbd5e1;
-    border-radius: 6px;
-    cursor: not-allowed;
-  }
 
-  /* BAGIAN KANAN (Foto) */
+  /* BAGIAN KANAN (Foto) - Bentuk Persegi Panjang Vertikal */
   .card-right {
-    width: 90px; 
-    height: 90px;
+    width: 70px; 
+    height: 110px; 
     flex-shrink: 0;
     border-radius: 8px;
     background: #ffffff; 
@@ -163,12 +150,13 @@
     align-items: center;
     justify-content: center;
     overflow: hidden;
+    margin-top: 5px; 
   }
   .card-right img {
     width: 100%;
     height: 100%;
     object-fit: contain;
-    padding: 8px; 
+    padding: 4px; 
   }
 
   /* FOOTER */
@@ -211,19 +199,16 @@
     .container {
       grid-template-columns: repeat(3, 1fr); 
     }
+    /* Proporsi kotak logo di Desktop */
     .card-right {
-      width: 100px;  
+      width: 75px;  
       height: 120px; 
-      border-radius: 10px;
-    }
-    .card-left h3 {
-      font-size: 1.05rem;
     }
   }
 
   /* KHUSUS HP */
   @media (max-width: 767px) {
-    .header-section h1 { font-size: 3.5rem; } /* Dikecilin dikit di HP */
+    .header-section h1 { font-size: 3.5rem; }
     .header-section p { font-size: 1.1rem; }
     .wa-float {
       width: 50px;
@@ -239,10 +224,10 @@
 
   <!-- HEADLINE & SUBLINE -->
   <header class="header-section">
-    <h1>CARCUN</h1>
+    <h1>CARICUN</h1>
     <p>cari cari cuan 🤭</p>
     
-    <a href="https://wa.me/6282128463176?text=muachhhhhhhh%20hahaha%20hahaha" class="btn-wa-header" target="_blank">
+    <a href="whatsapp://send?phone=6282128463176&text=muahhhhhhhh%20hahaha%20hahaha" class="btn-wa-header" target="_blank">
       💬 Request Posisi Job!
     </a>
   </header>
@@ -444,7 +429,7 @@
       </div>
     </div>
 
-    <!-- 14. PT Puri Mice -->
+    <!-- 14. PT Puri Mice (LINK UDAH DIMASUKIN) -->
     <div class="list-card">
       <div class="card-left">
         <div class="text-content">
@@ -452,7 +437,7 @@
           <div class="role">Event Project Officer</div>
           <div class="location">📍 Bekasi</div>
         </div>
-        <a href="https://glints.com/id/opportunities/jobs/event-project-officer/c450a82b-5ffd-43eb-af2e-298988f3d608" class="btn-link" target="_blank">Link Rekrutmen →</a>
+        <a href="https://glints.com/id/companies/pt-puri-mice/32fc77da-4b44-4f4a-844b-b716c53af8fa" class="btn-link" target="_blank">Link Rekrutmen →</a>
       </div>
       <div class="card-right">
         <img src="https://purimiceorganizer.com/wp-content/uploads/2025/08/Logo1-1.webp" alt="Logo Puri Mice" onerror="this.src='https://via.placeholder.com/120x120/d4ebf2/188b8e?text=Logo'">
@@ -467,7 +452,7 @@
   </footer>
 
   <!-- TOMBOL WA FLOATING (MELAYANG) -->
-  <a href="https://wa.me/6282128463176?text=Halo,%20gue%20mau%20kasih%20info%20rekomendasi%20loker%20nih..." class="wa-float" target="_blank" title="Jangan dishare keorang lain">
+  <a href="whatsapp://send?phone=6282128463176&text=muahhhhhhhh%20hahaha%20hahaha" class="wa-float" target="_blank" title="Jangan dishare keorang lain">
     💬
   </a>
 
