@@ -108,7 +108,13 @@
   .card-left .role {
     font-size: 0.95rem;
     color: #475569;
+    margin-bottom: 4px;
+  }
+  .card-left .location {
+    font-size: 0.85rem;
+    color: #64748b;
     margin-bottom: 16px;
+    font-weight: 600;
   }
   
   /* TOMBOL LINK REKRUTMEN */
@@ -145,7 +151,9 @@
   .card-right img {
     width: 100%;
     height: 100%;
-    object-fit: cover;
+    object-fit: contain; /* Pakai 'contain' biar logo gak kepotong */
+    padding: 8px; /* Jarak biar logo gak mepet pinggir */
+    background: #ffffff; /* Background kotak jadi putih */
   }
 
   /* FOOTER / COPYRIGHT */
@@ -165,7 +173,7 @@
     height: 60px;
     bottom: 30px;
     right: 30px;
-    background-color: #25d366; /* Warna khas WhatsApp */
+    background-color: #25d366;
     color: #FFF;
     border-radius: 50px;
     text-align: center;
@@ -214,34 +222,36 @@
   <!-- HEADLINE & SUBLINE -->
   <header class="header-section">
     <h1>Cari Cuan 🤭</h1>
-    <p>Sudah tak seleksi dan terlihat meyakinkan</p>
+    <p>sudah tak seleksi dan terlihat meyakinkan</p>
     
-    <!-- TOMBOL WA DI HEADER -->
     <!-- GANTI 6281234567890 DENGAN NOMOR KAMU -->
     <a href="https://wa.me/6281234567890?text=Halo,%20gue%20mau%20kasih%20info%20rekomendasi%20loker%20nih..." class="btn-wa-header" target="_blank">
-      💬 Request posisi job
+      💬 Punya Info Loker? Chat Gue!
     </a>
   </header>
 
   <div class="container">
 
-    <!-- CARD 1 -->
+    <!-- DATA LOKER REAL: PT LAVANANYA -->
     <div class="list-card">
       <div class="card-left">
-        <h3>PT Contoh Teknologi</h3>
-        <div class="role">Bidang: Software Engineer</div>
-        <a href="https://contoh.com/karier" class="btn-link" target="_blank">Link Rekrutmen →</a>
+        <h3>PT Lavananya Madinah Travel</h3>
+        <div class="role">Bidang: Legal & Compliance, Sekertaris, CS, HRD</div>
+        <div class="location">📍 Lokasi: Bandung</div>
+        <a href="https://id.jobstreet.com/id/PT-Lavananya-Madinah-Travel-jobs/at-this-company?jobId=95710755&type=standard" class="btn-link" target="_blank">Link Rekrutmen →</a>
       </div>
       <div class="card-right">
-        <img src="https://images.unsplash.com/photo-1497366216548-37526070297c?ixlib=rb-4.0.3&auto=format&fit=crop&w=300&q=80" alt="Foto PT Contoh Teknologi">
+        <!-- Gambar logo yang udah aku carikan -->
+        <img src="https://cdn1-production-images-kly.akamaized.net/Z44o6V2rP0L1Vw7O3gV5n4S3Xh8=/640x640/smart/filters:quality(75):strip_icc():format(webp)/kly-media-production/medias/4832501/original/043242200_1713161506-Logo_PT_Lavananya_Madinah_Travel.jpg" alt="Logo Lavananya" onerror="this.src='https://via.placeholder.com/120x120/d4ebf2/188b8e?text=Logo'">
       </div>
     </div>
 
-    <!-- CARD 2 -->
+    <!-- CARD 2 (Masih Dummy, hapus aja kalau udah ada data real) -->
     <div class="list-card">
       <div class="card-left">
         <h3>Startup Contoh Digital</h3>
         <div class="role">Bidang: UI/UX Designer</div>
+        <div class="location">📍 Lokasi: Jakarta</div>
         <a href="https://contoh.com/karier" class="btn-link" target="_blank">Link Rekrutmen →</a>
       </div>
       <div class="card-right">
@@ -249,11 +259,12 @@
       </div>
     </div>
 
-    <!-- CARD 3 -->
+    <!-- CARD 3 (Masih Dummy, hapus aja kalau udah ada data real) -->
     <div class="list-card">
       <div class="card-left">
         <h3>Bank Contoh Indonesia</h3>
         <div class="role">Bidang: Data Analyst</div>
+        <div class="location">📍 Lokasi: Surabaya</div>
         <a href="https://contoh.com/karier" class="btn-link" target="_blank">Link Rekrutmen →</a>
       </div>
       <div class="card-right">
@@ -270,7 +281,7 @@
 
   <!-- TOMBOL WA FLOATING (MELAYANG) -->
   <!-- GANTI 6281234567890 DENGAN NOMOR KAMU -->
-  <a href="https://wa.me/6281234567890?text=Halo,%20gue%20mau%20kasih%20info%20rekomendasi%20loker%20nih..." class="wa-float" target="_blank" title="Yang punya">
+  <a href="https://wa.me/6281234567890?text=Halo,%20gue%20mau%20kasih%20info%20rekomendasi%20loker%20nih..." class="wa-float" target="_blank" title="Kirim Info Loker">
     💬
   </a>
 
