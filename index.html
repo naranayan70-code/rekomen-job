@@ -5,13 +5,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Cari Cuan 🤭</title>
 <style>
-  /* PALET WARNA:
-     Biru Tegas: #008ae6
-     Biru Muda: #d4ebf2
-     Hijau Toska: #188b8e
-     Emas: #dca662
-  */
-
+  /* PALET WARNA */
   * { margin: 0; padding: 0; box-sizing: border-box; }
 
   body {
@@ -134,6 +128,18 @@
     border-color: #dca662;
     color: #ffffff;
   }
+  
+  /* TOMBOL DISABLED (Kalau Link Belum Ada) */
+  .btn-disabled {
+    display: inline-block;
+    color: #94a3b8;
+    font-weight: 600;
+    font-size: 0.85rem;
+    padding: 8px 16px;
+    border: 2px solid #cbd5e1;
+    border-radius: 6px;
+    cursor: not-allowed;
+  }
 
   /* BAGIAN KANAN (Foto) */
   .card-right {
@@ -151,9 +157,9 @@
   .card-right img {
     width: 100%;
     height: 100%;
-    object-fit: contain; /* Pakai 'contain' biar logo gak kepotong */
-    padding: 8px; /* Jarak biar logo gak mepet pinggir */
-    background: #ffffff; /* Background kotak jadi putih */
+    object-fit: contain;
+    padding: 8px; 
+    background: #ffffff;
   }
 
   /* FOOTER / COPYRIGHT */
@@ -203,7 +209,7 @@
       width: 100%;
       height: 160px;
     }
-    .btn-link {
+    .btn-link, .btn-disabled {
       width: 100%;
       text-align: center;
     }
@@ -225,50 +231,193 @@
     <p>sudah tak seleksi dan terlihat meyakinkan</p>
     
     <!-- GANTI 6281234567890 DENGAN NOMOR KAMU -->
-    <a href="https://wa.me/6281234567890?text=Halo,%20gue%20mau%20kasih%20info%20rekomendasi%20loker%20nih..." class="btn-wa-header" target="_blank">
-      💬 Punya Info Loker? Chat Gue!
+    <a href="https://wa.me/6282128463176?text=Halo,%20gue%20mau%20kasih%20info%20rekomendasi%20loker%20nih..." class="btn-wa-header" target="_blank">
+      💬 Request Posisi Job!
     </a>
   </header>
 
   <div class="container">
 
-    <!-- DATA LOKER REAL: PT LAVANANYA -->
+    <!-- 1. PT Lavananya Madinah Travel -->
     <div class="list-card">
       <div class="card-left">
         <h3>PT Lavananya Madinah Travel</h3>
-        <div class="role">Bidang: Legal & Compliance, Sekertaris, CS, HRD</div>
-        <div class="location">📍 Lokasi: Bandung</div>
+        <div class="role">Legal & Compliance, Sekertaris, CS, HRD</div>
+        <div class="location">📍 Bandung</div>
         <a href="https://id.jobstreet.com/id/PT-Lavananya-Madinah-Travel-jobs/at-this-company?jobId=95710755&type=standard" class="btn-link" target="_blank">Link Rekrutmen →</a>
       </div>
       <div class="card-right">
-        <!-- Gambar logo yang udah aku carikan -->
-        <img src="https://image-service-cdn.seek.com.au/8edb8005c06d79cb4455fc843d55218e78c474e8/f3c5292cec0e05e4272d9bf9146f390d366481d0">
+        <img src="https://cdn1-production-images-kly.akamaized.net/Z44o6V2rP0L1Vw7O3gV5n4S3Xh8=/640x640/smart/filters:quality(75):strip_icc():format(webp)/kly-media-production/medias/4832501/original/043242200_1713161506-Logo_PT_Lavananya_Madinah_Travel.jpg" alt="Logo Lavananya" onerror="this.src='https://via.placeholder.com/120x120/d4ebf2/188b8e?text=Logo'">
       </div>
     </div>
 
-    <!-- CARD 2 (Masih Dummy, hapus aja kalau udah ada data real) -->
+    <!-- 2. Vecha Event -->
     <div class="list-card">
       <div class="card-left">
-        <h3>Startup Contoh Digital</h3>
-        <div class="role">Bidang: UI/UX Designer</div>
-        <div class="location">📍 Lokasi: Jakarta</div>
-        <a href="https://contoh.com/karier" class="btn-link" target="_blank">Link Rekrutmen →</a>
+        <h3>Vecha Event</h3>
+        <div class="role">Staff Project Event</div>
+        <div class="location">📍 Bandung</div>
+        <a href="https://glints.com/id/opportunities/jobs/staff-project-event/0d84dc0a-87c2-47fb-8dc9-f55d98e1fbdd" class="btn-link" target="_blank">Link Rekrutmen →</a>
       </div>
       <div class="card-right">
-        <img src="https://images.unsplash.com/photo-1522071820081-009f0129c71c?ixlib=rb-4.0.3&auto=format&fit=crop&w=300&q=80" alt="Foto Startup Contoh">
+        <img src="https://images.glints.com/unsafe/160x0/glints-dashboard.oss-ap-southeast-1-internal.aliyuncs.com/company-logo/c6b3d9a5616806db1c7996aae19556e5.png" alt="Logo Vecha Event" onerror="this.src='https://via.placeholder.com/120x120/d4ebf2/188b8e?text=Logo'">
       </div>
     </div>
 
-    <!-- CARD 3 (Masih Dummy, hapus aja kalau udah ada data real) -->
+    <!-- 3. Cemerlang Multimedia -->
     <div class="list-card">
       <div class="card-left">
-        <h3>Bank Contoh Indonesia</h3>
-        <div class="role">Bidang: Data Analyst</div>
-        <div class="location">📍 Lokasi: Surabaya</div>
-        <a href="https://contoh.com/karier" class="btn-link" target="_blank">Link Rekrutmen →</a>
+        <h3>Cemerlang Multimedia</h3>
+        <div class="role">IPO Legal Manager, Customer Contact Center Sr. Manager</div>
+        <div class="location">📍 Bandung, Bogor</div>
+        <a href="https://id.jobstreet.com/Cemerlang-Multimedia-jobs/at-this-company?source=COMPANY_JOBS&jobId=95523729&type=standard" class="btn-link" target="_blank">Link Rekrutmen →</a>
       </div>
       <div class="card-right">
-        <img src="https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?ixlib=rb-4.0.3&auto=format&fit=crop&w=300&q=80" alt="Foto Bank Contoh">
+        <img src="https://media.licdn.com/dms/image/v2/D4D0BAQGNYJkjmM3FbA/company-logo_200_200/company-logo_200_200/0/1705890133577?e=2147483647&v=beta&t=aDLafBx-dH9FZ9j6sQnXBBNRKLcx2OMj423gCctb7TM" alt="Logo Cemerlang" onerror="this.src='https://via.placeholder.com/120x120/d4ebf2/188b8e?text=Logo'">
+      </div>
+    </div>
+
+    <!-- 4. Nusantara Gutama Group -->
+    <div class="list-card">
+      <div class="card-left">
+        <h3>Nusantara Gutama Group</h3>
+        <div class="role">Industrial Relations Officer (Magang)</div>
+        <div class="location">📍 Bandung Barat</div>
+        <a href="https://maganghub.kemnaker.go.id/magang-nasional/lowongan/industrial-relations-officer-01a18373-732c-70e9-aece-41ba1e5060cd" class="btn-link" target="_blank">Link Rekrutmen →</a>
+      </div>
+      <div class="card-right">
+        <img src="https://wlkp-assets.kemnaker.go.id/companies/93a89790-04ff-4a62-aaf7-f6342f56ce01/69d7a59119011.jpeg" alt="Logo Nusantara Gutama" onerror="this.src='https://via.placeholder.com/120x120/d4ebf2/188b8e?text=Logo'">
+      </div>
+    </div>
+
+    <!-- 5. Lajolie Bites -->
+    <div class="list-card">
+      <div class="card-left">
+        <h3>Lajolie Bites</h3>
+        <div class="role">Asisten Notaris</div>
+        <div class="location">📍 Tangerang Selatan</div>
+        <a href="https://glints.com/id/opportunities/jobs/asisten-notaris/71f0de40-647f-464d-a7cb-2a481ec104b0" class="btn-link" target="_blank">Link Rekrutmen →</a>
+      </div>
+      <div class="card-right">
+        <img src="https://images.glints.com/unsafe/160x0/glints-dashboard.oss-ap-southeast-1-internal.aliyuncs.com/company-logo/d8da7c4d60bdd8265517204b53625e77.png" alt="Logo Lajolie Bites" onerror="this.src='https://via.placeholder.com/120x120/d4ebf2/188b8e?text=Logo'">
+      </div>
+    </div>
+
+    <!-- 6. Elevia Group -->
+    <div class="list-card">
+      <div class="card-left">
+        <h3>Elevia Group</h3>
+        <div class="role">HRGA Officer</div>
+        <div class="location">📍 Bandung</div>
+        <a href="https://glints.com/id/opportunities/jobs/hrga-officer/946fce89-24e2-4bc1-94a1-09039d25b105" class="btn-link" target="_blank">Link Rekrutmen →</a>
+      </div>
+      <div class="card-right">
+        <img src="https://images.glints.com/unsafe/160x0/glints-dashboard.oss-ap-southeast-1-internal.aliyuncs.com/company-logo/10ebd8806d2213b7f87f8ca105d08553.png" alt="Logo Elevia" onerror="this.src='https://via.placeholder.com/120x120/d4ebf2/188b8e?text=Logo'">
+      </div>
+    </div>
+
+    <!-- 7. CV Sambara Boga -->
+    <div class="list-card">
+      <div class="card-left">
+        <h3>CV Sambara Boga</h3>
+        <div class="role">Human Resources (HR) Coordinator</div>
+        <div class="location">📍 Bandung</div>
+        <a href="https://glints.com/id/opportunities/jobs/human-resources-hr-coordinator/debc5e05-7ef8-4b6c-bf66-6b66984b952b" class="btn-link" target="_blank">Link Rekrutmen →</a>
+      </div>
+      <div class="card-right">
+        <img src="https://images.glints.com/unsafe/160x0/glints-dashboard.oss-ap-southeast-1-internal.aliyuncs.com/company-logo/522334cf849de04985dad5ebfa5a7390.jpg" alt="Logo Sambara Boga" onerror="this.src='https://via.placeholder.com/120x120/d4ebf2/188b8e?text=Logo'">
+      </div>
+    </div>
+
+    <!-- 8. The Raraysae -->
+    <div class="list-card">
+      <div class="card-left">
+        <h3>The Raraysae</h3>
+        <div class="role">Project administrator</div>
+        <div class="location">📍 Bandung</div>
+        <a href="https://glints.com/id/opportunities/jobs/project-administrator/7c5e8bdb-e1dd-45a7-9942-ecf2ae786ddb" class="btn-link" target="_blank">Link Rekrutmen →</a>
+      </div>
+      <div class="card-right">
+        <img src="https://images.glints.com/unsafe/160x0/glints-dashboard.oss-ap-southeast-1-internal.aliyuncs.com/company-logo/39f7dd92f87390e64503ceb5fb5ee27f.png" alt="Logo The Raraysae" onerror="this.src='https://via.placeholder.com/120x120/d4ebf2/188b8e?text=Logo'">
+      </div>
+    </div>
+
+    <!-- 9. Bianda Scarf -->
+    <div class="list-card">
+      <div class="card-left">
+        <h3>Bianda Scarf</h3>
+        <div class="role">Admin Produksi</div>
+        <div class="location">📍 Cimahi</div>
+        <a href="https://glints.com/id/opportunities/jobs/admin-produksi/b1c6efaf-567d-4110-bfd8-01ad795ccdae" class="btn-link" target="_blank">Link Rekrutmen →</a>
+      </div>
+      <div class="card-right">
+        <img src="https://images.glints.com/unsafe/160x0/glints-dashboard.oss-ap-southeast-1-internal.aliyuncs.com/company-logo/1ef7b3d5e50937492432ff4beff4991b.jpg" alt="Logo Bianda Scarf" onerror="this.src='https://via.placeholder.com/120x120/d4ebf2/188b8e?text=Logo'">
+      </div>
+    </div>
+
+    <!-- 10. PT. JOHAR AGRA ANDALAN -->
+    <div class="list-card">
+      <div class="card-left">
+        <h3>PT. Johar Agra Andalan</h3>
+        <div class="role">Staff PO</div>
+        <div class="location">📍 Bandung Barat</div>
+        <a href="https://glints.com/id/opportunities/jobs/staff-po/96d75af7-f484-4f83-a3ef-903f3366bc5f" class="btn-link" target="_blank">Link Rekrutmen →</a>
+      </div>
+      <div class="card-right">
+        <img src="https://images.glints.com/unsafe/160x0/glints-dashboard.oss-ap-southeast-1-internal.aliyuncs.com/company-logo/c159e4d5fbdab687da0f1d03ee5efd86.png" alt="Logo Johar Agra" onerror="this.src='https://via.placeholder.com/120x120/d4ebf2/188b8e?text=Logo'">
+      </div>
+    </div>
+
+    <!-- 11. PT. Hana Master Jaya -->
+    <div class="list-card">
+      <div class="card-left">
+        <h3>PT. Hana Master Jaya</h3>
+        <div class="role">Project Coordinator</div>
+        <div class="location">📍 Bandung Barat</div>
+        <a href="https://glints.com/id/opportunities/jobs/project-coordinator/1b180903-5c35-4cca-92c0-b1d908da2a73" class="btn-link" target="_blank">Link Rekrutmen →</a>
+      </div>
+      <div class="card-right">
+        <img src="https://images.glints.com/unsafe/160x0/glints-dashboard.oss-ap-southeast-1-internal.aliyuncs.com/company-logo/071baebb898540ce582a0e9495adc918.jpg" alt="Logo Hana Master" onerror="this.src='https://via.placeholder.com/120x120/d4ebf2/188b8e?text=Logo'">
+      </div>
+    </div>
+
+    <!-- 12. PT. Mindset Motivasi Indonesia -->
+    <div class="list-card">
+      <div class="card-left">
+        <h3>PT. Mindset Motivasi Indonesia</h3>
+        <div class="role">Event Coordinator</div>
+        <div class="location">📍 Bekasi</div>
+        <a href="https://glints.com/id/opportunities/jobs/event-coordinator/313aff60-0685-4be7-b555-7befeb47f8eb" class="btn-link" target="_blank">Link Rekrutmen →</a>
+      </div>
+      <div class="card-right">
+        <img src="https://images.glints.com/unsafe/160x0/glints-dashboard.oss-ap-southeast-1-internal.aliyuncs.com/company-logo/25b27aae5b264a7eafa5344139cae6b2.jpg" alt="Logo Mindset Motivasi" onerror="this.src='https://via.placeholder.com/120x120/d4ebf2/188b8e?text=Logo'">
+      </div>
+    </div>
+
+    <!-- 13. PT Indonesia Bole Yuma -->
+    <div class="list-card">
+      <div class="card-left">
+        <h3>PT Indonesia Bole Yuma</h3>
+        <div class="role">Project Coordinator (Mandarin)</div>
+        <div class="location">📍 Cirebon</div>
+        <a href="https://glints.com/id/opportunities/jobs/project-coordinator-mandarin/bfc3f2d2-2e23-44d0-a089-c13181ee90e4" class="btn-link" target="_blank">Link Rekrutmen →</a>
+      </div>
+      <div class="card-right">
+        <img src="https://images.glints.com/unsafe/160x0/glints-dashboard.oss-ap-southeast-1-internal.aliyuncs.com/company-logo/ca8945cd4b3112b4aa5faa5464e7012e.png" alt="Logo Bole Yuma" onerror="this.src='https://via.placeholder.com/120x120/d4ebf2/188b8e?text=Logo'">
+      </div>
+    </div>
+
+    <!-- 14. PT Puri Mice -->
+    <div class="list-card">
+      <div class="card-left">
+        <h3>PT Puri Mice</h3>
+        <div class="role">Event Project Officer</div>
+        <div class="location">📍 Bekasi</div>
+        <!-- Link belum ada, pakai tombol disabled -->
+        <span class="btn-disabled">Link Menyusul</span>
+      </div>
+      <div class="card-right">
+        <img src="https://purimiceorganizer.com/wp-content/uploads/2025/08/Logo1-1.webp" alt="Logo Puri Mice" onerror="this.src='https://via.placeholder.com/120x120/d4ebf2/188b8e?text=Logo'">
       </div>
     </div>
 
@@ -276,12 +425,12 @@
 
   <!-- FOOTER -->
   <footer>
-    <p>Dibuat penuh cinta dan waktu luang. Good luck interview-nya, ya! 🌸</p>
+    <p> Semoga ada yang Cocok. Wkwkwk 🌻</p>
   </footer>
 
   <!-- TOMBOL WA FLOATING (MELAYANG) -->
   <!-- GANTI 6281234567890 DENGAN NOMOR KAMU -->
-  <a href="https://wa.me/6281234567890?text=Halo,%20gue%20mau%20kasih%20info%20rekomendasi%20loker%20nih..." class="wa-float" target="_blank" title="Kirim Info Loker">
+  <a href="https://wa.me/6282128463176?text=Halo,%20gue%20mau%20kasih%20info%20rekomendasi%20loker%20nih..." class="wa-float" target="_blank" title="Jagan dishare keorang lain">
     💬
   </a>
 
